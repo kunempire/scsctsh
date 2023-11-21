@@ -1,0 +1,11 @@
+myhistory: myhistory [-c]
+    Display the history list stored in ~/.scstsh_history.
+    
+    Options:
+      NONE
+     
+    Arguments:
+      NONE
+    
+    Exit Status:
+    Returns 0 unless an invalid option is given or an error occurs.

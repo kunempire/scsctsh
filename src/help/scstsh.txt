@@ -1,0 +1,71 @@
+.\" Man page for Shell Brief
+.TH SHELL_BRIEF 1 "November 2023" "Version 1.0" "Shell Brief"
+
+.SH NAME
+scstsh \- a simple shell written in C(linux)
+
+.SH DESCRIPTION
+scstsh is a simple shell developed as a final test of the Operating System course in the School of Cyber Science and Technology at SYSU.
+
+.SH OPTIONS
+None
+
+.SH SEE ALSO
+The project repository: https://github.com
+
+.SH AUTHOR
+Zhaokun Li
+
+21312810
+
+.SH REFERRENCE
+No known bugs.
+
+.SH COPYRIGHT
+Copyright (C) 2023 Your Organization. All rights reserved.
+
+NAME
+    history - Display or manipulate the history list.
+
+SYNOPSIS
+    history [-c] [-d offset] [n] or history -anrw [filename] or history -ps arg [arg...]
+
+DESCRIPTION
+    Display or manipulate the history list.
+    
+    Display the history list with line numbers, prefixing each modified
+    entry with a `*'.  An argument of N lists only the last N entries.
+    
+    Options:
+      -c        clear the history list by deleting all of the entries
+      -d offset delete the history entry at position OFFSET. Negative
+                offsets count back from the end of the history list
+    
+      -a        append history lines from this session to the history file
+      -n        read all history lines not already read from the history file
+                and append them to the history list
+      -r        read the history file and append the contents to the history
+                list
+      -w        write the current history to the history file
+    
+      -p        perform history expansion on each ARG and display the result
+                without storing it in the history list
+      -s        append the ARGs to the history list as a single entry
+    
+    If FILENAME is given, it is used as the history file.  Otherwise,
+    if HISTFILE has a value, that is used, else ~/.bash_history.
+    
+    If the HISTTIMEFORMAT variable is set and not null, its value is used
+    as a format string for strftime(3) to print the time stamp associated
+    with each displayed history entry.  No time stamps are printed otherwise.
+    
+    Exit Status:
+    Returns success unless an invalid option is given or an error occurs.
+
+SEE ALSO
+    bash(1)
+
+IMPLEMENTATION
+    GNU bash, version 5.1.16(1)-release (x86_64-pc-linux-gnu)
+    Copyright (C) 2020 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>

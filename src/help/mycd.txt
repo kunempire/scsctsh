@@ -1,0 +1,12 @@
+mycd: mycd [dir]
+    Change the shell working directory.
+   
+    Options:
+      NONE
+
+    Arguments:
+      DIR       Change the current directory to DIR.  The default DIR is 
+                the value of the HOME shell variable.
+    
+    Exit Status:
+    Returns 0 if the directory is changed; non-zero otherwise.

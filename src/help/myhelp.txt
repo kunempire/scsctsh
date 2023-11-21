@@ -1,0 +1,12 @@
+myhelp: myhelp [cmd]
+    Displays brief summaries of builtin commands.  If CMD is specified, 
+    gives detailed help on it, otherwise the description of scstsh.
+    
+    Options:
+      NONE
+    
+    Arguments:
+      CMD       Name of builtin command.
+    
+    Exit Status:
+    Returns success unless PATTERN is not found or an invalid option is given.
