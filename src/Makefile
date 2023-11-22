@@ -27,6 +27,6 @@ clean_o:
 	rm -f main.o ctrl.o parse.o execute.o 
 
 run:
-	./myshell
+	./scstsh
 
 
