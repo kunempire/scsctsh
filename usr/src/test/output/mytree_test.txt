@@ -1,0 +1,96 @@
+--------------------------------------------
+Test 1: only command
+--------------------------------------------
+[33m.
+[0m└──test_myman.sh
+└──test_mycp.sh
+└──test_mytree.sh
+└──test_myps.sh
+└──test_myls.sh
+└──test_mymv.sh
+└──Makefile
+└──[1m[34moutput[0m
+   └──mytree_test.txt
+   └──myman_test.txt
+   └──myps_test.txt
+   └──myrm_test.txt
+   └──mycp_test.txt
+   └──mymv_test.txt
+   └──myls_test.txt
+└──test_myrm.sh
+--------------------------------------------
+Test 2: command with option <-d depth>
+--------------------------------------------
+[33m.
+[0m└──test_myman.sh
+└──test_mycp.sh
+└──test_mytree.sh
+└──test_myps.sh
+└──test_myls.sh
+└──test_mymv.sh
+└──Makefile
+└──[1m[34moutput[0m
+   └──mytree_test.txt
+   └──myman_test.txt
+   └──myps_test.txt
+   └──myrm_test.txt
+   └──mycp_test.txt
+   └──mymv_test.txt
+   └──myls_test.txt
+└──test_myrm.sh
+--------------------------------------------
+Test 3: command with argument [directory]
+--------------------------------------------
+[33m../../
+[0m└──[1m[34msrc[0m
+   └──[1m[34mtest[0m
+      └──test_myman.sh
+      └──test_mycp.sh
+      └──test_mytree.sh
+      └──test_myps.sh
+      └──test_myls.sh
+      └──test_mymv.sh
+      └──Makefile
+      └──[1m[34moutput[0m
+         └──mytree_test.txt
+         └──myman_test.txt
+         └──myps_test.txt
+         └──myrm_test.txt
+         └──mycp_test.txt
+         └──mymv_test.txt
+         └──myls_test.txt
+      └──test_myrm.sh
+   └──operate_file.c
+   └──myman.c
+   └──[1m[34mmanual_page[0m
+      └──scstsh.txt
+      └──myrm.txt
+      └──mycp.txt
+      └──myps.txt
+      └──myman.txt
+      └──mymv.txt
+      └──mytree.txt
+      └──myls.txt
+   └──mycp.c
+   └──mymv.c
+   └──[1m[34mheader[0m
+      └──print_setting.h
+      └──operate_file.h
+      └──parameter.h
+   └──myls.c
+   └──Makefile
+   └──mytree.c
+   └──myrm.c
+   └──myps.c
+└──[1m[34mbin[0m
+   └──mytree
+   └──myman
+   └──myrm
+   └──mymv
+   └──myps
+   └──mycp
+   └──myrm copy
+   └──myls
+--------------------------------------------
+All tests finish
+--------------------------------------------

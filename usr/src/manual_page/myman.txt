@@ -1,0 +1,27 @@
+.\" Man page for myman
+.TH MYMAN 1 "November 2023" "Version 1.0" "User Commands"
+
+.SH NAME
+myman \- an interface to the system reference manuals
+
+.SH SYNOPSIS
+.B myman
+[PAGE_NAME]
+
+.SH DESCRIPTION
+\fIMyman\fP is the system's manual pager. Each PAGE_NAME argument given to 
+\fImyman\fP is normally the name of a program, utility or function. The 
+manual page associated with each of these arguments is then found and displayed. 
+Manual pages are stored in `../src/manual_page/` of \fImyman\fP binary file.
+
+.SH OPTIONS
+.B NONE
+
+.SH SEE ALSO
+The project repository: https://github.com/kunempire/scsctsh.
+
+.SH AUTHOR
+Written by E_K.
+
+.SH COPYRIGHT
+Copyright (C) 2023 E_K. All rights reserved.

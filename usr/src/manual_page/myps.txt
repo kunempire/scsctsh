@@ -1,0 +1,25 @@
+.\" Man page for ps
+.TH MYPS 1 "November 2023" "Version 1.0" "User Commands"
+
+.SH NAME
+myps \- report a snapshot of the current processes.
+
+.SH SYNOPSIS
+.B myps
+[-p pid]
+
+.SH DESCRIPTION
+Myps displays information about the active processes, all by default.
+
+.SH OPTIONS
+.B \-p 
+\fI[pid]\fP: display the information of processe \fIpid\fP.
+
+.SH SEE ALSO
+The project repository: https://github.com/kunempire/scsctsh.
+
+.SH AUTHOR
+Written by E_K.
+
+.SH COPYRIGHT
+Copyright (C) 2023 E_K. All rights reserved.

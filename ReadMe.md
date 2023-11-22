@@ -6,13 +6,12 @@ First of all, it's a comprehensive work assigned in *Operation System*. It is na
 
 ## Function
 
-
-1. **Builtin command.** Support `myhelp`, `mycd`, `mypwd`, `myhistory`, `mykill`. All these commands are similar to builtin commands in bash. You can run `myhelp <cmd_name>` in scstsh for usage help.
-2. **External command.** Support almost all the commands in the $PATH.
-3. **Backgroud run** Support `&` function with space separated in the last of a command line.
-4. **Pipe** Support `|` function with space separated.
-5. **Redirection** Support all the redirection symbol with space separated.
-6. **Up and down change** Support change command in history with up and down key, but you cannot use this function without any char input.
+1. **Builtin command:** Support `myhelp`, `mycd`, `mypwd`, `myhistory`, `mykill`. All these commands are similar to builtin commands in bash. You can run `myhelp <cmd_name>` in scstsh for usage help.
+2. **External command:** Support almost all the commands in the $PATH.
+3. **Backgroud run:** Support `&` function with space separated in the last of a command line.
+4. **Pipe:** Support `|` function with space separated.
+5. **Redirection:** Support all the redirection symbol with space separated.
+6. **Up and down change:** Support change command in history with up and down key, but you cannot use this function without any char input.
 
 ## Quick Start
 

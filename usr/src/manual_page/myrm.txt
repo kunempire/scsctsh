@@ -1,0 +1,26 @@
+.\" Man page for rm
+.TH MYRM 1 "November 2023" "Version 1.0" "User Commands"
+
+.SH NAME
+myrm \- remove files or directory.
+
+.SH SYNOPSIS
+.B myrm
+[-r DIRECTORY] [FILEs]...
+
+.SH DESCRIPTION
+Myrm removes the specified FILEs separated by space. By default, it does 
+not remove directory. You must offer arguments ether FILEs or a DIRECTORY.
+
+.SH OPTIONS
+.B \-r
+DIRECTORY: remove DIRECTORY and their contents recursively.
+
+.SH SEE ALSO
+The project repository: https://github.com/kunempire/scsctsh.
+
+.SH AUTHOR
+Written by E_K.
+
+.SH COPYRIGHT
+Copyright (C) 2023 E_K. All rights reserved.

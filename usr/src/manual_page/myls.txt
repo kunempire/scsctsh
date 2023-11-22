@@ -1,0 +1,25 @@
+.\" Man page for myls
+.TH MYLS 1 "November 2023" "Version 1.0" "User Commands"
+
+.SH NAME
+myls \- list directory contents.
+
+.SH SYNOPSIS
+.B myls
+[OPTION] [FILE]
+
+.SH DESCRIPTION
+List information about the FILE (the current directory by default) and sort entries alphabetically.
+
+.SH OPTIONS
+.B \-l
+: use a long listing format with details.
+
+.SH SEE ALSO
+The project repository: https://github.com/kunempire/scsctsh.
+
+.SH AUTHOR
+Written by E_K.
+
+.SH COPYRIGHT
+Copyright (C) 2023 E_K. All rights reserved.

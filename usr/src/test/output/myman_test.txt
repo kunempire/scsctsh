@@ -1,0 +1,122 @@
+----------------------------------------------------------------------------------------
+Test 1: only command
+----------------------------------------------------------------------------------------
+MYMAN(1)                         User Commands                        MYMAN(1)
+
+
+
+NNAAMMEE
+       myman - an interface to the system reference manuals
+
+
+SSYYNNOOPPSSIISS
+       mmyymmaann [PAGE_NAME]
+
+
+DDEESSCCRRIIPPTTIIOONN
+       _M_y_m_a_n  is  the  system's manual pager. Each PAGE_NAME argument given to
+       _m_y_m_a_n is normally the name of a program, utility or function. The  man‐
+       ual page associated with each of these arguments is then found and dis‐
+       played.  Manual pages are stored in `../src/manual_page/` of _m_y_m_a_n  bi‐
+       nary file.
+
+
+OOPPTTIIOONNSS
+       NNOONNEE
+
+
+SSEEEE AALLSSOO
+       The project repository: https://github.com/kunempire/scsctsh.
+
+
+AAUUTTHHOORR
+       Written by E_K.
+
+
+CCOOPPYYRRIIGGHHTT
+       Copyright (C) 2023 E_K. All rights reserved.
+
+
+
+Version 1.0                      November 2023                        MYMAN(1)
+----------------------------------------------------------------------------------------
+Test 2: command with argument [PAGE_NAME] (bin)
+----------------------------------------------------------------------------------------
+SHELL_BRIEF(1)                    Shell Brief                   SHELL_BRIEF(1)
+
+
+
+NNAAMMEE
+       scstsh - a simple shell written in C(linux)
+
+
+DDEESSCCRRIIPPTTIIOONN
+       scstsh  is  a  simple  shell developed as a final test of the Operating
+       System course in the School of Cyber Science and Technology at SYSU.
+
+
+OOPPTTIIOONNSS
+       None
+
+
+SSEEEE AALLSSOO
+       The project repository: https://github.com
+
+
+AAUUTTHHOORR
+       Zhaokun Li
+
+       21312810
+
+
+RREEFFEERRRREENNCCEE
+       No known bugs.
+
+
+CCOOPPYYRRIIGGHHTT
+       Copyright (C) 2023 Your Organization. All rights reserved.
+
+
+
+Version 1.0                      November 2023                  SHELL_BRIEF(1)
+----------------------------------------------------------------------------------------
+Test 3: command with argument [PAGE_NAME] (cmd)
+----------------------------------------------------------------------------------------
+MYLS(1)                          User Commands                         MYLS(1)
+
+
+
+NNAAMMEE
+       myls - list directory contents.
+
+
+SSYYNNOOPPSSIISS
+       mmyyllss [OPTION] [FILE]
+
+
+DDEESSCCRRIIPPTTIIOONN
+       List  information about the FILE (the current directory by default) and
+       sort entries alphabetically.
+
+
+OOPPTTIIOONNSS
+       --ll : use a long listing format with details.
+
+
+SSEEEE AALLSSOO
+       The project repository: https://github.com/kunempire/scsctsh.
+
+
+AAUUTTHHOORR
+       Written by E_K.
+
+
+CCOOPPYYRRIIGGHHTT
+       Copyright (C) 2023 E_K. All rights reserved.
+
+
+
+Version 1.0                      November 2023                         MYLS(1)
+----------------------------------------------------------------------------------------
+All tests finish
+----------------------------------------------------------------------------------------

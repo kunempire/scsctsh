@@ -1,0 +1,70 @@
+--------------------------------------------
+Test 1: only command
+--------------------------------------------
+test_myman.sh
+test_mycp.sh
+test_mytree.sh
+test_myps.sh
+test_myls.sh
+test_mymv.sh
+Makefile
+output
+test_myrm.sh
+--------------------------------------------
+Test 2: command with option <-l>
+--------------------------------------------
+-rwxr-xr-x  1 root root  1315 Nov 22 08:53 test_myman.sh
+-rwxr-xr-x  1 root root  2941 Nov 22 14:17 test_mycp.sh
+-rwxr-xr-x  1 root root   950 Nov 22 08:39 test_mytree.sh
+-rwxr-xr-x  1 root root  1266 Nov 22 08:42 test_myps.sh
+-rwxr-xr-x  1 root root  1185 Nov 22 06:57 test_myls.sh
+-rwxr-xr-x  1 root root  3362 Nov 22 14:36 test_mymv.sh
+-rw-r--r--  1 root root   142 Nov 22 09:37 Makefile
+drwxr-xr-x  2 root root  4096 Nov 22 14:24 output
+-rwxr-xr-x  1 root root  2387 Nov 22 10:31 test_myrm.sh
+--------------------------------------------
+Test 3: command with argument [PATH]
+--------------------------------------------
+home
+proc
+bin
+boot
+tmp
+mnt
+sbin
+libx32
+etc
+lib64
+usr
+dev
+lib
+opt
+run
+lib32
+root
+media
+srv
+sys
+var
+input
+.dockerenv
+NGC-DL-CONTAINER-LICENSE
+cuda-keyring_1.0-1_all.deb
+--------------------------------------------
+Test 4: command with option <-l> and argument [PATH]
+--------------------------------------------
+drwxr-xr-x  4 root root  4096 Oct 26 06:10 .kun
+drwxr-xr-x  6 root root  4096 Nov 07 10:36 code_GenImage
+drwxr-xr-x  2 root root  4096 Nov 10 11:08 tmp
+-rw-r--r--  1 root root 147897477120 Jun 14 19:01 ILSVRC2012_img_train.tar
+-rw-r--r--  1 root root 184678028 Nov 10 11:08 imagenet_ai_0508_adm.zip
+-rw-r--r--  1 root root 147897477120 Jun 14 19:01 ILSVRC2012_img_train.tar.1
+-rw-r--r--  1 root root  6947 Nov 09 13:46 data.py
+-rw-r--r--  1 root root 236272040 Nov 17 17:17 wget-log
+-rw-r--r--  1 root root 172373617 Nov 17 01:48 wget-log.1
+drwxr-xr-x  2 root root  4096 Nov 15 04:16 Gen
+drwxr-xr-x  3 root root  4096 Nov 07 12:49 DaChuang
+drwxr-xr-x 11 root root  4096 Nov 16 08:15 GenImage_data
+--------------------------------------------
+All tests finish
+--------------------------------------------

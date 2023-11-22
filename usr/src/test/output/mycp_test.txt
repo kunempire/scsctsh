@@ -1,0 +1,98 @@
+Create test files and directory for testing
+--------------
+tree for now:
+--------------
+.
+├── file1.txt
+├── file4.txt
+├── subdir1
+│   └── file2.txt
+└── subdir2
+    └── file3.txt
+
+2 directories, 4 files
+--------------------------------------------
+Test 1: only command
+--------------------------------------------
+Usage: mycp DEST SOURCEs...
+--------------------------------------------
+Test 2: cp one file to one file
+--------------------------------------------
+file4.txt:
+This is file1
+--------------
+tree for now:
+--------------
+.
+├── file1.txt
+├── file4.txt
+├── subdir1
+│   └── file2.txt
+└── subdir2
+    └── file3.txt
+
+2 directories, 4 files
+--------------------------------------------
+Test 3: cp one directory to one directory
+--------------------------------------------
+--------------
+tree for now:
+--------------
+.
+├── file1.txt
+├── file4.txt
+├── subdir1
+│   ├── file2.txt
+│   └── subdir2
+│       └── file3.txt
+└── subdir2
+    └── file3.txt
+
+3 directories, 5 files
+--------------------------------------------
+Test 4: cp multiple files to one directory
+--------------------------------------------
+--------------
+tree for now:
+--------------
+.
+├── file1.txt
+├── file4.txt
+├── subdir1
+│   ├── file2.txt
+│   └── subdir2
+│       └── file3.txt
+└── subdir2
+    ├── file1.txt
+    ├── file2.txt
+    └── file3.txt
+
+3 directories, 7 files
+--------------------------------------------
+Test 5: cp mixed files and directory to one directory
+--------------------------------------------
+[31msubdir2[0m[31m is a directory, copy singlely.[0m--------------
+tree for now:
+--------------
+.
+├── file1.txt
+├── file4.txt
+├── subdir1
+│   ├── file1.txt
+│   ├── file2.txt
+│   ├── file3.txt
+│   └── subdir2
+│       └── file3.txt
+└── subdir2
+    ├── file1.txt
+    ├── file2.txt
+    └── file3.txt
+
+3 directories, 9 files
+--------------------------------------------
+Test 6: cp directory2 to one directory1 (directory2 contians directory1)
+--------------------------------------------
+subdir1 CONTAINS subdir1/subdir2, cannot copy!
+--------------------------------------------
+All tests finish
+--------------------------------------------

@@ -1,0 +1,26 @@
+.\" Man page for mycp
+.TH MYCP 1 "November 2023" "Version 1.0" "User Commands"
+
+.SH NAME
+mycp \- copy files and directory.
+
+.SH SYNOPSIS
+.B mycp
+\fIDEST\fP \fISOURCEs\fP...
+
+.SH DESCRIPTION
+Mycp copies SOURCE to DEST. You must offer exactly one DEST and at least one SOURCE. 
+If DEST is a file, copy SOURCE file to DEST file; If DEST is a directory, copy just one
+SOURCE directory or multiple SOURCE files.
+
+.SH OPTIONS
+.B NONE
+
+.SH SEE ALSO
+The project repository: https://github.com/kunempire/scsctsh.
+
+.SH AUTHOR
+Written by E_K.
+
+.SH COPYRIGHT
+Copyright (C) 2023 E_K. All rights reserved.
