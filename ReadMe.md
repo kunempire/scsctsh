@@ -1,5 +1,8 @@
 **scstsh** is a project of simple shell developed in c(Linux). This is version 1.0.
 
+- `./src` is the scstsh resources.
+- `./usr` is the external commands similar to Linux implemented by me. There is also a ReadMe in `./usr`.
+
 ## Origin
 
 First of all, it's a comprehensive work assigned in *Operation System*. It is named after School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University.
@@ -20,6 +23,10 @@ There is a **scsth** compiled in */src*, which you can run directly by `make run
 If you want to compile the project locally, you can use */src/Makefile* to make project, just keeping the directory structure.
 
 Here is a command demo: `cat main.c | grep -n "int" | wc -l > out.txt`.
+
+## Attention
+
+1. Make sure that binary `scstsh` and folder `./src/help` are in the same directory to run `myhelp`.
 
 ## Reference
 
