@@ -18,7 +18,7 @@ First of all, it's a comprehensive work assigned in *Operation System*. It is na
 
 ## Quick Start
 
-There is a **scsth** compiled in */src*, which you can run directly by `make run` or `./scstsh`.
+There is a **scsth** compiled here, which you can run directly by `./scstsh`.
 
 If you want to compile the project locally, you can use */src/Makefile* to make project, just keeping the directory structure.
 
@@ -26,7 +26,16 @@ Here is a command demo: `cat main.c | grep -n "int" | wc -l > out.txt`.
 
 ## Attention
 
-1. Make sure that binary `scstsh` and folder `./src/help` are in the same directory to run `myhelp`.
+### myhelp
+
+The scstsh has builtin help text about `scstsh`. However, for 'loading when using', other builtin commands' help texts are stored in `./src/help`. There are 4 ways to solve the problem of path relation between `scstsh` and `help`:
+
+1. Just keep the project structure and run `scstsh` directly.
+2. Only need to keep `scstsh` and `./src` in the same directory like now.
+3. Modify the relative `help` path `RELATIVE_PATH_TO_HELP` in *excute.c* to the `scstsh`.
+4. Add the help texts to become a part of source code like scstsh's help text.
+
+### others
 
 ## Reference
 

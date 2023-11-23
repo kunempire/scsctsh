@@ -65,5 +65,5 @@ Let's have a quick view of the structure of this folder.
 
 1. If you want to have information of these commands, run `myman <name>`.
 2. If you want to use these commands somewhere else (althrough impossible), remember to add `the path to/bin` to enviromental varables.
-3. The manual pages are stored in `/src/manual_page`. Therefore, if you use `myman` somewhere else, you need to modify the `MANUAL_PAGE_PATH` in `/src/myman.c` properly. If you arenot familar with C, you can just keep the project structure and run `myman` or run `../../bin/myman` without enviromental varable setting,in `the/path/to/usr/src/test`.
+3. The manual pages are stored in `/src/manual_page`. Therefore, if you use `myman` somewhere else, you need to modify the `MANUAL_PAGE_PATH` in */src/myman.c* properly. If you arenot familar with C, you can just keep the project structure and run `myman` or run `../../bin/myman` without enviromental varable setting,in *the/path/to/usr/src/test`.
 4. Try to use `Makefile` to build projects or run commands. You will find it convenient.

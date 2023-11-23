@@ -3,6 +3,8 @@
 #include "parameter.h"
 #include "print_setting.h"
 
+#define RELATIVE_PATH_TO_HELP "/src/help/"
+
 #define NO_DEBUG
 #include <assert.h>
 
@@ -49,8 +51,8 @@ void execute_external_cmd(int i) {
 void execute_cmd() {
   /* builtin commands */
   if (!strcmp(CMDS[0].argv[0], "myhelp")) {
-    char path[MAX_CHAR_SIZE + 10];
-    sprintf(path, "%s/help/", initial_DIR);
+    char path[MAX_CHAR_SIZE + 30];
+    sprintf(path, "%s%s", initial_DIR,RELATIVE_PATH_TO_HELP);
     if (CMDS[0].arg_cnt > 1) {
       strcat(path, CMDS[0].argv[1]);
       strcat(path, ".txt");
