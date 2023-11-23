@@ -1,4 +1,6 @@
-**scstsh** is a project of simple shell developed in c(Linux). This is version 1.0.
+**scstsh** is a project of simple shell developed in c(Linux). 
+
+Here is version 2.0.
 
 - `./src` is the scstsh resources.
 - `./usr` is the external commands similar to Linux implemented by me. There is also a ReadMe in `./usr`.
@@ -15,6 +17,7 @@ First of all, it's a comprehensive work assigned in *Operation System*. It is na
 4. **Pipe:** Support `|` function with space separated.
 5. **Redirection:** Support all the redirection symbol with space separated.
 6. **Up and down change:** Support change command in history with up and down key, but you cannot use this function without any char input.
+7. **Script file support(new):** You can write a script with '#' as annotion and `scstsh` will perform the script line by line but ignore lines beginning with '#'.
 
 ## Quick Start
 
@@ -23,6 +26,8 @@ There is a **scsth** compiled here, which you can run directly by `./scstsh`.
 If you want to compile the project locally, you can use */src/Makefile* to make project, just keeping the directory structure.
 
 Here is a command demo: `cat main.c | grep -n "int" | wc -l > out.txt`.
+
+If you want to test the `Script file support`, there is a *demo.sh* in *./src/test*.
 
 ## Attention
 

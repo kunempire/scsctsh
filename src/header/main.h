@@ -56,6 +56,15 @@ void free_allocated_memory();
 */
 void handle_ctrl_c(int signal);
 
+/* function `act_on_script`:
+        Perform commands the in script file, '#' as annotion to ignore.
+
+   input `file_path`:
+        Read the file of the path.
+
+*/
+void act_on_script(const char *file_path);
+
 int main();
 
 #endif /* main.h */

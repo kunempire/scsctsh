@@ -131,14 +131,66 @@ void handle_ctrl_c(int signal) {
   show_header();
 }
 
+void act_on_script(const char *file_path) {
+  FILE *script = fopen(file_path, "r");
+  if (script == NULL) {
+    perror("Error opening file");
+    return;
+  }
+
+  while (1) {
+    update_shell();
+
+    if (fgets(cmd_line, sizeof(cmd_line), script) == NULL) {
+      exit(EXIT_SUCCESS);
+    }
+
+    // remove '\n'
+    cmd_line[strcspn(cmd_line, "\n")] = '\0';
+
+    // ignore lines begin with "#" and empty lines
+    if (cmd_line[0] == '#' || cmd_line[0] == '\0' || cmd_line[0] == '\n') {
+      continue;
+    }
+
+    if (!strcmp(cmd_line, "exit")) break;
+    parse(cmd_line);
+
+    status = execute();
+    if (status == 0) {
+      continue;
+    }
+    if (status == 1) {
+      PRINT_COLOR("Command syntx error!", RED, 2);
+    } else if (status == 2) {
+      PRINT_COLOR("No command to execute!", YEL, 2);
+    } else {
+      printf("%d\n", status);
+      PRINT_COLOR("Unexpected error!", RED, 2);
+    }
+  }
+
+  fclose(script);
+}
+
 /* function `main`:
       The entry of the whole project.
 
 */
-int main() {
+int main(int argc, char *argv[]) {
   if (alloc_shell_space()) {
-    return EXIT_FAILURE;
+    exit(EXIT_FAILURE);
   }
+
+  if (argc == 2) {
+    act_on_script(argv[1]);
+    free_allocated_memory();
+    return 0;
+  } else if (argc > 2) {
+    printf("At most one argument!\n");
+    exit(EXIT_FAILURE);
+  }
+
   if (signal(SIGINT, handle_ctrl_c) == SIG_ERR) {
     perror("Error registering Ctrl+C handler");
     return EXIT_FAILURE;
@@ -172,6 +224,8 @@ int main() {
       PRINT_COLOR("Command syntx error!", RED, 2);
     } else if (status == 2) {
       PRINT_COLOR("No command to execute!", YEL, 2);
+    } else if (status == 3) {
+      PRINT_COLOR("External command syntx error or not find!", RED, 2);
     } else {
       printf("%d\n", status);
       PRINT_COLOR("Unexpected error!", RED, 2);

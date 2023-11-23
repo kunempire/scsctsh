@@ -42,7 +42,7 @@ void execute_external_cmd(int i) {
     // `execvp` is not a system-call but mainly call the `execve`, a syscall
     int status = execvp(CMDS[i].argv[0], CMDS[i].argv);
     if (status < 0) {  // execvp failed to perform current command.
-      PRINT_COLOR("external command syntx error or not find!", RED, 2);
+      printf("external command %s syntx error or not find!\n", CMDS[i].argv[0]);
     }
     exit(EXIT_FAILURE);
   }
@@ -52,7 +52,7 @@ void execute_cmd() {
   /* builtin commands */
   if (!strcmp(CMDS[0].argv[0], "myhelp")) {
     char path[MAX_CHAR_SIZE + 30];
-    sprintf(path, "%s%s", initial_DIR,RELATIVE_PATH_TO_HELP);
+    sprintf(path, "%s%s", initial_DIR, RELATIVE_PATH_TO_HELP);
     if (CMDS[0].arg_cnt > 1) {
       strcat(path, CMDS[0].argv[1]);
       strcat(path, ".txt");
@@ -154,7 +154,7 @@ void execute_cmd() {
 }
 
 int execute() {
-  if (CMD_COL == 0) return 2;
+  if (CMD_COL < 0) return 2;
 
   if (CMDS->back_run == 1) {
     pid_t pid = fork();
