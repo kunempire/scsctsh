@@ -12,6 +12,7 @@
 extern struct cmd CMDS[MAX_COMMAND_PER_LINE];
 extern char in_redir_FILE[MAX_CHAR_SIZE];
 extern char out_redir_FILE[MAX_CHAR_SIZE];
+extern char error_redir_FILE[MAX_CHAR_SIZE];
 extern char history_FILE[MAX_CHAR_SIZE];
 extern int CMD_COL;
 extern char initial_DIR[MAX_CHAR_SIZE];
@@ -129,6 +130,13 @@ void execute_cmd() {
     else
       CMDS[CMD_COL - 1].out_redir_fd = open(out_redir_FILE, OUTR_FLAG, MODE);
   }
+  if (error_redir_FILE[0] != '\0') {
+    if (IS_APPEND)
+      CMDS[CMD_COL - 1].err_redir_fd = open(error_redir_FILE, OUTR_A_FLAG, MODE);
+    else
+      CMDS[CMD_COL - 1].err_redir_fd = open(error_redir_FILE, OUTR_FLAG, MODE);
+  }
+
   int i;
   int fd;
   int p_fd[2];

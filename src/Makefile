@@ -29,4 +29,5 @@ clean_o:
 run:
 	./scstsh
 
-
+test:
+	../scstsh ./test/test_scstsh.sh

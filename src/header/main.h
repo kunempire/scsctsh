@@ -24,13 +24,13 @@ int alloc_shell_space();
 void init_shell_infor();
 
 /* function `update_shell`:
-        Initialize the information needed of shell.
+        After executing command, reset settings to update.
 
 */
 void update_shell();
 
 /* function `show_header`:
-        After executing command, reset settings to update.
+        Show the header of command line: (scstsh) ... .
 
 */
 void show_header();

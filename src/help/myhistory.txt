@@ -1,4 +1,4 @@
-myhistory: myhistory [-c]
+myhistory: myhistory
     Display the history list stored in ~/.scstsh_history.
     
     Options:
