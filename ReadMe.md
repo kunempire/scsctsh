@@ -40,7 +40,27 @@ The scstsh has builtin help text about `scstsh`. However, for 'loading when usin
 3. Modify the relative `help` path `RELATIVE_PATH_TO_HELP` in *excute.c* to the `scstsh`.
 4. Add the help texts to become a part of source code like scstsh's help text.
 
+### error
+
+`scstsh` now has no perfect error-handling system, that is only to capture error with limited handling like printing error infor. 
+
+When using it directly, it can nearly stasify basic need without error to crash, just avoid to input ctrl char like left and right. However, using `scstsh` to perform a script is more restricted. You cannot perform wrong command and annotion must be in a single line beginning with '#'.
+
+### interupt and exit
+
+<ctrl+c> to kill current command but not to exit. Use `exit` to exit `scstsh`.
+
 ### others
+
+1. Builtin command cannot be redirected.
+
+## Improvement
+
+Here are also the problems and shorts exiting ~~but author doesn't want to solve~~:
+
+1. **Keyboard monitor.** No specific process to monitor (kind of lightweight) and the monitoring logic is simple.
+2. **Error handle.** Mentioned below.
+3. **"Small" bug.** Just experience it.
 
 ## Reference
 
