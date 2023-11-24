@@ -11,6 +11,11 @@ int main(int argc, char *argv[]) {
     fclose(file);
   }
 
+  if (is_path_contained(argv[2], argv[1])) {
+    printf("%s CONTAINS %s, cannot move!\n", argv[2], argv[1]);
+    exit(EXIT_FAILURE);
+  }
+
   if (!is_directory(argv[1])) {
     if (is_directory(argv[2])) {
       printf("%s not exits or try to move a directory to a file\n", argv[1]);
@@ -20,11 +25,6 @@ int main(int argc, char *argv[]) {
     copy_file_to_file(argv[2], argv[1]);
     remove_file(argv[2]);
     exit(EXIT_SUCCESS);
-  }
-
-  if (is_path_contained(argv[2], argv[1])) {
-    printf("%s CONTAINS %s, cannot move!\n", argv[2], argv[1]);
-    exit(EXIT_FAILURE);
   }
 
   if (is_directory(argv[2])) {
@@ -50,6 +50,6 @@ int main(int argc, char *argv[]) {
       remove_file(argv[i]);
     }
   }
-  
+
   return 0;
 }
