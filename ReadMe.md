@@ -11,7 +11,7 @@ First of all, it's a comprehensive work assigned in *Operation System*. It is na
 
 ## Function
 
-1. **Builtin command:** Support `myhelp`, `mycd`, `mypwd`, `myhistory`, `mykill`. All these commands are similar to builtin commands in bash. You can run `myhelp <cmd_name>` in scstsh for usage help.
+1. **Builtin command:** Support `myhelp`, `mycd`, `mypwd`, `myhistory`, `mykill`, and `exit` to exit (<ctrl+c> is capturued). All these commands are similar to builtin commands in bash. You can run `myhelp <cmd_name>` in scstsh for usage help.
 2. **External command:** Support almost all the commands in the $PATH.
 3. **Backgroud run:** Support `&` function with space separated in the last of a command line.
 4. **Pipe:** Support `|` function with space separated.
@@ -42,7 +42,7 @@ The scstsh has builtin help text about `scstsh`. However, for 'loading when usin
 
 ### error
 
-`scstsh` now has no perfect error-handling system, that is only to capture error with limited handling like printing error infor. 
+`scstsh` now has no perfect error-handling system, that is only to capture error with limited handling like printing error information. 
 
 When using it directly, it can nearly stasify basic need without error to crash, just avoid to input ctrl char like left and right. However, using `scstsh` to perform a script is more restricted. You cannot perform wrong command and annotion must be in a single line beginning with '#'.
 
@@ -60,7 +60,7 @@ Here are also the problems and shorts exiting ~~but author doesn't want to solve
 
 1. **Keyboard monitor.** No specific process to monitor (kind of lightweight) and the monitoring logic is simple.
 2. **Error handle.** Mentioned below.
-3. **"Small" bug.** Just experience it.
+3. **"Small" bugs.** Just experience it.
 
 ## Reference
 

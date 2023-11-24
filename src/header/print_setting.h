@@ -128,11 +128,12 @@
     printf("\n\t  E_K\n\n");                                                  \
     PRINT_HIGHLIGHT("USAGE");                                                 \
     printf(                                                                   \
-        "\n\t  The builtin command: myhelp, mycd, mypwd, myhistory, mykill\n" \
+        "\n\t  The builtin command: myhelp, mycd, mypwd, myhistory, mykill, " \
+        "and \033[1mexit\033[0m to exit (<ctrl+c> is capturued)\n"            \
         "\t  The usage of builtin command: \033[1mmyhelp\033[0m <cmd_name>\n" \
         "\t  Support almost all the external command in $PATH\n\n");          \
     PRINT_HIGHLIGHT("SEE_ALSO");                                              \
-    printf("\n\t  \033[1mmyman\033[0m [scstsh]: scstsh(1)\n\n");              \
+    printf("\n\t  \033[1mmyman\033[0m [scstsh]: scstsh(1) (2)\n\n");          \
     PRINT_HIGHLIGHT("RESPOSITORY");                                           \
     printf("\n\t  The project repository: ");                                 \
     PRINT_ATTR_LINE printf("https://github.com/kunempire/scsctsh");           \

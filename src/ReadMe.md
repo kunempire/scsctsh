@@ -16,8 +16,7 @@ Let's have a quick view of the structure of the source of `scstsh`.
 │   ├── myhelp.txt
 │   ├── myhistory.txt
 │   ├── mykill.txt
-│   ├── mypwd.txt
-│   └── scstsh.txt
+│   └── mypwd.txt 
 ├── main.c # main function
 ├── Makefile # help to compile C files
 ├── parse.c # parse commands

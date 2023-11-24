@@ -1,25 +1,48 @@
 .\" Man page for scstsh
-.TH SHELL_BRIEF 1 "November 2023" "Version 1.0" "Shell Brief"
+.TH SHELL_BRIEF 1 "November 2023" "Version 1.0" "scstsh"
 
 .SH NAME
-scstsh \- a simple shell written in C(linux)
+scstsh \- a simple shell written in C(linux).
 
 .SH DESCRIPTION
-scstsh is a simple shell developed as a final test of the Operating System course in the School of Cyber Science and Technology at SYSU.
+scstsh is a simple shell developed as a final test of the Operating System course CSE303 
+in the School of Cyber Science and Technology at SYSU.
 
-.SH OPTIONS
-None
+.SH FUNCTIOM
+Builtin command: myhelp, mycd, mypwd, myhistory, mykill, and exit to exit (<ctrl+c> is capturued).
 
-.SH SEE ALSO
-The project repository: https://github.com
+External command: Support almost all the commands in the $PATH.
+
+Backgroud run: Support 
+.B & 
+function with space separated in the last of a command line.
+
+Pipe: 
+Support 
+.B |
+function with space separated.
+
+Redirection: 
+Support all the redirection symbol with space separated.
+
+Up and down change: 
+Support change command in history with up and down key, but you cannot use this function without any char input.
+
+Script file support: You can write a script with 
+.B # 
+as annotion and 
+.B scstsh 
+will perform the script line by line but ignore lines beginning with 
+.B #
+.
+
+.TH SHELL_BRIEF 2 "November 2023" "Version 1.0" "scstsh"
 
 .SH AUTHOR
-Zhaokun Li
+E_K.
 
-21312810
-
-.SH REFERRENCE
-No known bugs.
+.SH RESPOSITORY
+https://github.com/kunempire/scsctsh.
 
 .SH COPYRIGHT
-Copyright (C) 2023 Your Organization. All rights reserved.
+Copyright (C) 2023  E_K. All rights reserved.
