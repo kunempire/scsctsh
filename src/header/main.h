@@ -65,6 +65,6 @@ void handle_ctrl_c(int signal);
 */
 void act_on_script(const char *file_path);
 
-int main();
+int main(int argc, char *argv[]);
 
 #endif /* main.h */

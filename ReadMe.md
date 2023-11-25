@@ -29,6 +29,10 @@ Here is a command demo: `cat main.c | grep -n "int" | wc -l > out.txt`.
 
 If you want to test the `Script file support`, there is a *demo.sh* in *./src/test*.
 
+## Structure
+
+![Structure](./images/structure.svg)
+
 ## Attention
 
 ### myhelp
